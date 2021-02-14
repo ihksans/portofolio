@@ -1,89 +1,15 @@
-// import React from 'react';
-// import './App.css';
-
-// //import 'rsuite/lib/styles/themes/dark/index.less';
-
-// /** import default css */
-// // import 'rsuite/dist/styles/rsuite-default.css';
-
-// /** import dark css */
-//  import 'rsuite/dist/styles/rsuite-dark.css';
-
-//  import { Navbar,Nav,Dropdown,Icon } from 'rsuite';
-
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.handleSelect = this.handleSelect.bind(this);
-//     this.state = {
-//       activeKey: null
-//     };
-//   }
-//   handleSelect(eventKey) {
-//     this.setState({
-//       activeKey: eventKey
-//     });
-//   }
-//   render() {
-//     const { activeKey } = this.state;
-//     return (
-//       <div className="nav-wrapper">
-       
-//         <NavBarInstance appearance="subtle" activeKey={activeKey} onSelect={this.handleSelect} />
-//       </div>
-//     );
-//   }
-// }
-// const NavBarInstance = ({ onSelect, activeKey, ...props }) => {
-//   return (
-//     <Navbar {...props}>
-//       <Navbar.Header>
-       
-//       </Navbar.Header>
-//       <Navbar.Body>
-//         <Nav onSelect={onSelect} activeKey={activeKey}>
-//           <Nav.Item eventKey="1" icon={<Icon icon="home" />}>Home</Nav.Item>
-//           <Nav.Item eventKey="2">Personal</Nav.Item>
-//           <Nav.Item eventKey="3">Project</Nav.Item>
-//           <Nav.Item eventKey="4">Artikel</Nav.Item>
-//           <Nav.Item eventKey="5">Interest</Nav.Item>
-//           <Dropdown title="About">
-//           <Dropdown.Item eventKey="6">Pendidikan</Dropdown.Item>
-//           <Dropdown.Item eventKey="7">Organisasi</Dropdown.Item>
-//           <Dropdown.Item eventKey="8">Hobi</Dropdown.Item>
-//             <Dropdown.Item eventKey="9">Cita Cita</Dropdown.Item>
-//             <Dropdown.Item eventKey="10">Media Sosial</Dropdown.Item>
-//           </Dropdown>
-//         </Nav>
-//         <Nav pullRight>
-//           <Nav.Item icon={<Icon icon="cog" />}>Settings</Nav.Item>
-//         </Nav>
-//       </Navbar.Body>
-//     </Navbar>
-//   );
-// };
-// export default App;
-
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {Spring} from 'react-spring/renderprops'
 import './App.css'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import 'rsuite/dist/styles/rsuite-dark.css';
-import { PanelGroup,Panel,Navbar,Nav,Dropdown,Icon, Container, Header, Content, Footer, Sidebar, Button, IconButton, ButtonGroup, ButtonToolbar ,Timeline } from 'rsuite';
+import { PanelGroup,Panel,Navbar,Nav,Icon,  Button, IconButton, ButtonToolbar ,Timeline } from 'rsuite';
 import Card from './Card';
 import CardTwo from './CardTwo';
 import CardTri from './CardTri';
 import Self from './Self';
-
+import mars from './image/mars.png';
 // Little helpers ...
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
-const Yellow = ({ children }) => <span style={{ color: '#EFF59B' }}>{children}</span>
-const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children}</span>
-const Green = ({ children }) => <span style={{ color: '#57EE89' }}>{children}</span>
-const Blue = ({ children }) => <span style={{ color: '#57C7FF' }}>{children}</span>
-const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</span>
 const NavBarInstance = ({ onSelect, activeKey ,onClik, ...props }) => {
   return (
     <Navbar {...props}>
@@ -102,13 +28,7 @@ const NavBarInstance = ({ onSelect, activeKey ,onClik, ...props }) => {
     </Navbar>
   );
 };
-const FootInstance =({})=> {
-  return(
-    <ButtonToolbar style={{marginLeft:'20%', marginTop:'30%'}}>
-    
-  </ButtonToolbar>
-  );
-}
+
 
 const Biodata = () =>{
  return(
@@ -249,7 +169,7 @@ class App extends React.Component {
         
         {/* image content layer1 */}
         <ParallaxLayer offset={0} speed={-0.3} style={{ pointerEvents: 'none' }}> 
-          <img src='image/mars.png' style={{ width: '20%', marginLeft: '5%', marginTop:'7%' }} />
+          <img src={mars} style={{ width: '20%', marginLeft: '5%', marginTop:'7%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-0.3} style={{ pointerEvents: 'none' }}>
         <img src='image/uranus.png' style={{ width: '40%', marginLeft: '40%', marginTop:'25%' }} />
