@@ -46,11 +46,7 @@
     flex-direction: row;
   }
 }
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
+
 .flex-container > div {
   margin-left: 10px;
   margin-top: 20px;
@@ -61,39 +57,188 @@
 .textDev {
   margin-left: 20%;
 }
-.header {
-  padding: 15px;
-  margin-left: 5%;
-  font-size: 100%;
+
+/* handphone */
+@media (max-width: 480px) {
+  .textHeader1 {
+    font-size: xx-large;
+    font-weight: bold;
+    align-content: center;
+    color: #06c0d7;
+  }
+  .viewWelcome {
+    justify-content: center;
+    margin-top: 30%;
+  }
+  .textHeader3 {
+    font-size: 100%;
+    font-family: Arial;
+  }
+  .icon {
+    position: relative;
+    width: 80%;
+    height: 80px;
+    border-radius: 50px;
+    transition: all 0.8s;
+  }
+  .mars {
+    margin-left: -5%;
+    margin-top: 0.5%;
+  }
+  .uranus {
+    margin-top: 40%;
+    margin-left: 10%;
+  }
+  .roket {
+    margin-top: 80%;
+    margin-left: 10%;
+  }
+  .viewNavCov {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    cursor: pointer;
+  }
+  .biodataDiv {
+    width: 50%;
+  }
+  .menu {
+    width: 50%;
+    font-family: Arial;
+  }
+  .textBio {
+    color: #ffea30;
+    font-weight: 600;
+    font-size: 90%;
+  }
+  .textBio2 {
+    font-size: 50%;
+    color: #f2f4f3;
+    font-weight: 50;
+    text-align: justify;
+  }
+  .viewTextBio {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .header {
+    padding: 15px;
+    font-size: 100%;
+  }
+  .viewFooterBio {
+    margin-top: 16%;
+    width: 100%;
+  }
+  .textHeaderProject {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #06c0d7;
+  }
+  .footerPro {
+    font-weight: 600;
+    color: #ffff;
+    font-size: 50%;
+  }
+  .textPrestasi {
+    color: #ffea30;
+    font-size: 80%;
+  }
+  .textPrestasiDes {
+    color: #ffff;
+    font-size: 70%;
+  }
+  .viewPrestasi {
+    margin-left: 5%;
+    margin-top: -10%;
+    width: 100%;
+  }
 }
-.textHeader1 {
-  font-size: 300%;
-  align-content: center;
-  color: #06c0d7;
+/* laptop */
+@media (min-width: 1025px) {
+  .textHeader1 {
+    font-size: 300%;
+    justify-content: center;
+    color: #06c0d7;
+    left: 50%;
+  }
+  .viewWelcome {
+    justify-content: center;
+  }
+  .textHeader3 {
+    font-size: 150%;
+    font-family: Arial;
+    align-content: center;
+    justify-content: center;
+  }
+  .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50px;
+    transition: all 0.8s;
+  }
+  .mars {
+    width: "20%";
+    margin-left: "5%";
+    margin-top: "7%";
+  }
+
+  .viewNavCov {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    cursor: pointer;
+  }
+  .menu {
+    width: 100%;
+    font-family: Arial;
+  }
+  .textBio {
+    font-size: 100%;
+    color: #ffea30;
+    font-weight: 600;
+  }
+  .textBio2 {
+    font-size: 100%;
+    color: #f2f4f3;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .viewTextBio {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+  }
+  .header {
+    padding: 15px;
+    margin-left: 30%;
+    font-size: 100%;
+  }
+  .viewFooterBio {
+    margin-top: 5%;
+    margin-left: 50%;
+  }
+  .textHeaderProject {
+    font-size: xx-large;
+    color: #06c0d7;
+    font-weight: bold;
+  }
+  .footerPro {
+    font-weight: 600;
+    color: #ffff;
+  }
+  .textPrestasi {
+    color: #ffea30;
+  }
 }
-.textHeader3 {
-  font-size: 150%;
-  font-family: Arial;
-}
-.viewTextBio {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 5%;
-}
-.menu {
-  width: 100%;
-  font-family: Arial;
-}
-.textBio {
-  font-size: 100%;
-  color: #ffea30;
-  font-weight: 600;
-}
-.textBio2 {
-  font-size: 100%;
-  color: #f2f4f3;
-  font-weight: 600;
-}
+
 .main {
   width: 100%;
   margin-left: 300%;
@@ -104,14 +249,6 @@
 }
 .viewTextBio2 {
   margin-top: 2%;
-}
-.viewFooterBio {
-  margin-top: 5%;
-  margin-left: 50%;
-}
-.textHeaderProject {
-  font-size: xx-large;
-  color: #06c0d7;
 }
 
 .custom-timeline {
@@ -136,37 +273,14 @@
 .custom-timeline .rs-timeline-item-content {
   margin-left: 24px;
 }
-.textPrestasi {
-  color: #ffea30;
-}
-.viewPrestasi {
-  margin-left: 5%;
-}
+
 .viewFooterPres {
   margin-left: 50%;
 }
-.viewWelcome {
-  justify-content: center;
-}
-.viewNavCov {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  cursor: pointer;
-}
-.icon {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 20px;
-  border-radius: 50px;
-  transition: all 0.8s;
-}
+
 .icon:hover {
   background: #e60073;
-  box-shadow: 0 0 20px #e60073;
+  box-shadow: 0 0 4% #e60073;
 }
 .icon:hover:nth-child(2) {
   background: #1877f2;
@@ -238,8 +352,4 @@ svg circle {
 }
 .typed-cursor {
   display: none;
-}
-.footerPro {
-  font-weight: 600;
-  color: #ffff;
 }
