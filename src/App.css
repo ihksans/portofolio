@@ -68,7 +68,7 @@
   }
   .viewWelcome {
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 20%;
   }
   .textHeader3 {
     font-size: 100%;
@@ -112,6 +112,10 @@
     color: #ffea30;
     font-weight: 600;
     font-size: 90%;
+  }
+  .textBiografi {
+    color: #f2f4f3;
+    font-size: 105%;
   }
   .textBio2 {
     font-size: 50%;

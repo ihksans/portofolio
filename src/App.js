@@ -292,7 +292,7 @@ class App extends React.Component {
                   <div class="textBio2">
                     <Self/>
                     <div class="viewTextBio">
-                      <p>Sebelumnya saya ucapkan terimakasih telah berkunjung di blog saya. Izinkan saya memperkenalkan diri. Yooo!! perkenalkan nama saya Ikhsan Setiawan. Nama panggilan ihksan. Terkadang orang orang salah menuliskan nama saya, karena selalu dibalik huruf "h" dan "k", hehehe maap ya gais. Saya lahir di Bandung, namun rumah asli saya di Tegal Jawa Tengah. Saya sangat suka belajar hal baru terutama yang berkaitan dengan coding, walau tidak jago jago amat hehehe</p>
+                      <p class="textBiografi">Sebelumnya saya ucapkan terimakasih telah berkunjung di blog saya. Izinkan saya memperkenalkan diri. Yooo!! perkenalkan nama saya Ikhsan Setiawan. Nama panggilan ihksan. Terkadang orang orang salah menuliskan nama saya, karena selalu dibalik huruf "h" dan "k", hehehe maap ya gais. Saya lahir di Bandung, namun rumah asli saya di Tegal Jawa Tengah. Saya sangat suka belajar hal baru terutama yang berkaitan dengan coding, walau tidak jago jago amat hehehe</p>
                     </div>
                     <div class="viewFooterBio"  >    
                     <ButtonToolbar >
