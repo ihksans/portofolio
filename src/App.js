@@ -346,7 +346,7 @@ class App extends React.Component {
         <ParallaxLayer
           offset={3}
           speed={-0}
-          style={{ display: 'flex', alignItems: 'center', justifyItems: 'center' }}
+          style={{ display: 'flex', alignItems: 'center', justifyItems: 'center'}}
           >   
           <Prestasi/>    
         </ParallaxLayer>
