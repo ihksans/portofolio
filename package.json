@@ -1,6 +1,7 @@
 {
   "name": "portopolio",
   "version": "0.1.0",
+  "homepage": "http://47.254.242.64/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

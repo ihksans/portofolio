@@ -44,6 +44,7 @@
   .flex-container {
     display: flex;
     flex-direction: row;
+    margin-left: 1%;
   }
 }
 
@@ -168,6 +169,7 @@
     justify-content: center;
     color: #06c0d7;
     left: 50%;
+    font-weight: 600;
   }
   .viewWelcome {
     justify-content: center;
@@ -202,6 +204,7 @@
   }
   .menu {
     width: 100%;
+    margin-left: 10%;
     font-family: Arial;
   }
   .textBio {
@@ -240,6 +243,10 @@
   }
   .textPrestasi {
     color: #ffea30;
+  }
+  .viewPrestasi {
+    margin-left: 5%;
+    width: 100%;
   }
 }
 
